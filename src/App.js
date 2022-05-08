@@ -1,12 +1,15 @@
 
 import Menu from "./components/Menu";
-import AllPosts from "./components/AllPosts";
+import Container from "./components/Container";
+import Navigation from "./components/Navigation";
+
 
 export default function App() {
     return (
         <div>
             <Menu />
-            <AllPosts />
+            <Container />
+            <Navigation />
         </div>
     )
 } 

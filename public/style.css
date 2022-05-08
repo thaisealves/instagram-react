@@ -1,6 +1,6 @@
     body {
         font-family: 'Roboto', sans-serif;
-        background-color: #fafafa;        
+        background-color: #fafafa;
         color: #262626;
     }
 
@@ -20,9 +20,7 @@
     header {
         width: 100%;
     }
-    .root > div {
-        width: 100%;
-    }
+
     .menu-desktop {
         background-color: #FFFFFF;
 
@@ -84,12 +82,18 @@
     }
 
     /*includes the stories, sidebar and all the posts*/
-    .content {
+    .root>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
         display: flex;
         justify-content: center;
         width: 935px;
-        position: relative;
-
+        position: absolute;
     }
 
     /*all the posts from the page without the sidebar*/
@@ -102,7 +106,6 @@
     .sidebar {
         margin: 101px 0px 0px 29px;
         width: 293px;
-
         position: absolute;
         right: 0;
     }
@@ -213,6 +216,7 @@
         position: relative;
         overflow: hidden;
         border-radius: 3px;
+        border: 1px solid #DBDBDB;
     }
 
     .arrow {

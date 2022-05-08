@@ -30,8 +30,9 @@
         align-items: center; */
         justify-content: space-around;
     }
-    .content{
+    .container{
         position: inherit;
+        width: auto;
     }
     .all-posts{
      

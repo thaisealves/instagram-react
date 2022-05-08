@@ -26,6 +26,9 @@ export default function Stories() {
     return (
         <div class="stories">
             {stories.map(item => <Story img={item.img} h5={item.h5} alt={item.alt} />)}
+            <div class="arrow pointer">
+                <ion-icon name="chevron-forward-circle"></ion-icon>
+            </div>
         </div>
     )
 }

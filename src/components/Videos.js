@@ -26,7 +26,7 @@ function Video(props) {
             </div>
             <div class="likedby">
                 <img src={props.imgLikedPf} />
-                <h6>Curtido por <strong class="pointer">{props.pfLiked}</strong> e <strong class="pointer"> outras 101.523 pessoas</strong></h6>
+                <h6>Curtido por <strong class="pointer">{props.pfLiked}</strong> e <strong class="pointer"> outras {props.likes} pessoas</strong></h6>
 
             </div>
 
@@ -46,10 +46,10 @@ function Video(props) {
 }
 export default function Videos() {
     const videos = [
-        { profilePic:"/images/naturelife.jpg", pfName: "naturelife", videoMp4: "/images/video.mp4", videoOgg:"/images/video.ogv",  imgLikedPf: "/images/respondeai.png", pfLiked: "respondeai", pfComment: "catanacomics" }]
+        { profilePic:"/images/naturelife.jpg", pfName: "naturelife", videoMp4: "/images/video.mp4", videoOgg:"/images/video.ogv",  imgLikedPf: "/images/respondeai.png", pfLiked: "respondeai", pfComment: "catanacomics", likes: "101.523" }]
         return (
             <>
-                 {videos.map(item => <Video profilePic={item.profilePic} pfName={item.pfName} videoMp4={item.videoMp4} videoOgg = {item.videoOgg} imgLikedPf={item.imgLikedPf} pfLiked={item.pfLiked} pfComment={item.pfComment} />)}
+                 {videos.map(item => <Video profilePic={item.profilePic} pfName={item.pfName} videoMp4={item.videoMp4} videoOgg = {item.videoOgg} imgLikedPf={item.imgLikedPf} pfLiked={item.pfLiked} pfComment={item.pfComment} likes={item.likes}/>)}
             </>
         )
     }
