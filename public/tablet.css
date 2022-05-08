@@ -1,5 +1,5 @@
 @media screen and (max-width: 935px){
-    body{
+    /* body{
         font-family: 'Roboto', sans-serif;
         background-color: #fafafa;
         width: 100%;
@@ -8,13 +8,13 @@
         align-items: center;
 
         color: #262626;
-    }
+    } */
     
-    strong{
+    /* strong{
         font-weight: 500;
-    }
+    } */
     /*menus, part where the name INSTAGRAM is, and all the other things, like the logo*/
-    .menu-desktop {
+    /* .menu-desktop {
     background-color: #FFFFFF;
 
     height: 54px;
@@ -23,26 +23,33 @@
 
     position: fixed;
     z-index: 1;
-    }
+    } */
     .menu-content{
         height: 54px;
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
         justify-content: space-around;
     }
-    
-    .menu-left{
+    .content{
+        position: inherit;
+    }
+    .all-posts{
+     
+        left: unset;
+        align-items: center;
+    }
+    /* .menu-left{
         width: 150px;
         display: flex;
         justify-content: space-between;
-    }
-    .division {
+    } */
+    /* .division {
         width: 1px;
         height: 22px ;
         background-color: #DBDBDB;
         position: center;
-    }
-    .search-bar div{
+    } */
+    /* .search-bar div{
         width: 215px;
         height: 28px;
         background-color: #fafafa;
@@ -62,11 +69,11 @@
         width: 110px;
         display: flex;
         justify-content: space-between;
-    }
+    } */
 
     /* everything about the stories are at this part!*/
 
-    .stories{
+    /* .stories{
         width: 614px;
         background-color: #FFFFFF;
         margin-top: 88px;
@@ -77,17 +84,17 @@
         position: relative;
         overflow: hidden;
         border-radius: 3px;
-    } 
-    .arrow{
+    }  */
+    /* .arrow{
         color: #FFFFFF;
         position: absolute;
         right: 8px;
         font-size: 26px;
         filter: drop-shadow(0.5px 0px 6px grey);
-    }
+    } */
 
   
-    .profile-story{
+    /* .profile-story{
         max-width: 78px;
         display: flex;
         flex-direction: column;
@@ -107,9 +114,9 @@
     }
     .story-image img{
         height: 56px; 
-    }
+    } */
     
-    .profile-story h5{
+    /* .profile-story h5{
         white-space: nowrap;
         overflow: hidden;
         max-width: 78px;
@@ -119,11 +126,11 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 14px;
-    }
+    } */
    
 
     /*a part that involves all the mais publications*/
-    .posts{
+    /* .posts{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -135,12 +142,12 @@
         margin-bottom: 60px;
         border: 1px solid #DBDBDB;
         border-radius: 3px;
-    }
+    } */
     
-    .box-img > img{
+    /* .box-img > img{
         width: 100%; 
-    }
-    .user{
+    } */
+    /* .user{
         width: 100%;
         display: flex;
         align-items: center;
@@ -149,8 +156,8 @@
         background-color: #FFFFFF;
         box-sizing: border-box;
         border-radius: 3px 3px 0px 0px;
-    }
-    .user div{
+    } */
+    /* .user div{
         display: flex;
         align-items: center
     }
@@ -173,11 +180,11 @@
       
         zoom: 150%;
        margin-right: 3%;
-    }
+    } */
    
     
   /*the section that everything about the likes are setted*/  
-    .likes{
+    /* .likes{
         display: flex;
         justify-content: space-between;
         align-items: space-around;
@@ -187,8 +194,8 @@
     }
     .likes ion-icon{
         font-size: 25px;
-    }
-    .icons-left ion-icon{
+    } */
+    /* .icons-left ion-icon{
         margin-right: 17px;
     }
     .likedby{
@@ -205,10 +212,10 @@
         width: 20px;
         margin-right: 5px;
         
-    }
+    } */
     
     /*where the comments start*/
-    .fixed{
+    /* .fixed{
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -246,7 +253,7 @@
     button:hover{
         color: #0095F6;
     }
-    
+     */
     /*pointer hover*/
     ion-icon{
         cursor: pointer;

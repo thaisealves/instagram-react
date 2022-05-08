@@ -1,51 +1,65 @@
-@media screen and (min-width: 935px){
-    body{
+    body {
         font-family: 'Roboto', sans-serif;
-        background-color: #fafafa;
+        background-color: #fafafa;        
+        color: #262626;
+    }
+
+    .root {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        color: #262626;
     }
-    
-    strong{
+
+    strong {
         font-weight: 500;
     }
- /* the upper part of the page, where the name of the site is*/   
-    .menu-desktop{
-    background-color: #FFFFFF;
 
-    height: 54px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    position: fixed;
-    z-index: 1;
+    /* the upper part of the page, where the name of the site is*/
+    header {
+        width: 100%;
     }
-    .menu-content{
+    .root > div {
+        width: 100%;
+    }
+    .menu-desktop {
+        background-color: #FFFFFF;
+
+        height: 54px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        left: 0;
+        z-index: 1;
+    }
+
+    .menu-content {
         width: 935px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-         
+
         font-size: 20px;
     }
-    .menu-left{
+
+    .menu-left {
         width: 150px;
         display: flex;
         justify-content: space-between;
     }
+
     .division {
         width: 1px;
-        height: 22px ;
+        height: 22px;
         background-color: #DBDBDB;
         position: center;
     }
-    .search-bar div{
+
+    .search-bar div {
         width: 215px;
         height: 28px;
         background-color: #fafafa;
@@ -55,34 +69,37 @@
         justify-content: center;
         align-items: center;
     }
-    .search-bar p{
+
+    .search-bar p {
         color: #979797;
         font-weight: 400;
         line-height: 14px;
         font-size: 12px;
     }
+
     .icons-right {
         width: 110px;
         display: flex;
         justify-content: space-between;
     }
 
-/*includes the stories, sidebar and all the posts*/
-    .desktop-all{
+    /*includes the stories, sidebar and all the posts*/
+    .content {
         display: flex;
         justify-content: center;
         width: 935px;
         position: relative;
-   
+
     }
 
-/*all the posts from the page without the sidebar*/
-    .all-posts{
+    /*all the posts from the page without the sidebar*/
+    .all-posts {
         position: absolute;
         left: 0;
     }
-/* everything about the sidebar*/
-    .sidebar{
+
+    /* everything about the sidebar*/
+    .sidebar {
         margin: 101px 0px 0px 29px;
         width: 293px;
 
@@ -90,23 +107,26 @@
         right: 0;
     }
 
-    .main-profile{
+    .main-profile {
         display: flex;
         align-items: center;
         margin-bottom: 24px;
     }
-    .main-profile h4{
+
+    .main-profile h4 {
         font-size: 14px;
         line-height: 16.4px;
         font-weight: 500;
     }
-    .main-profile h6{
+
+    .main-profile h6 {
         color: #8E8E8E;
         font-size: 12px;
         font-weight: 400;
-        line-height: 14px; 
+        line-height: 14px;
     }
-    .main-profile img{
+
+    .main-profile img {
         width: 56px;
         height: 56px;
         border-radius: 28px;
@@ -115,7 +135,7 @@
 
     }
 
-    .all-suggestions{
+    .all-suggestions {
         display: flex;
         justify-content: space-between;
         font-weight: 500;
@@ -124,45 +144,46 @@
 
         margin-bottom: 18px;
     }
-    .all-suggestions h6{
+
+    .all-suggestions h6 {
         color: #8E8E8E;
     }
 
-    .profile-suggest{
+    .profile-suggest {
         display: flex;
         justify-content: space-between;
         margin-bottom: 16px;
     }
 
-    .profile-suggest > div{
+    .profile-suggest>div {
         display: flex;
         align-items: center;
     }
 
-    .profile-suggest img{
+    .profile-suggest img {
         width: 32px;
         height: 32px;
         margin-right: 11px;
     }
 
-    .profile-suggest h4{
+    .profile-suggest h4 {
         font-size: 14px;
         line-height: 16.4px;
         font-weight: 500;
     }
-    
-    .profile-suggest h5{
+
+    .profile-suggest h5 {
         color: #139EF2;
         font-size: 12px;
         line-height: 14px;
         font-weight: 500;
     }
-    
-    .profile-suggest h6{
+
+    .profile-suggest h6 {
         color: #8E8E8E;
         font-size: 12px;
         font-weight: 400;
-        line-height: 14px;    
+        line-height: 14px;
     }
 
     .configs {
@@ -174,13 +195,14 @@
         line-height: 12.89px;
         color: #C7C7C7;
     }
-    .year{
+
+    .year {
         margin-top: 18px;
     }
 
 
-/* the bar where the stories are located*/
-    .stories{
+    /* the bar where the stories are located*/
+    .stories {
         width: 614px;
         background-color: #FFFFFF;
         margin-top: 88px;
@@ -191,16 +213,17 @@
         position: relative;
         overflow: hidden;
         border-radius: 3px;
-    } 
-    .arrow{
+    }
+
+    .arrow {
         color: #FFFFFF;
         position: absolute;
         right: 8px;
         font-size: 26px;
         filter: drop-shadow(0.5px 0px 6px grey);
     }
-    
-    .profile-story h5{
+
+    .profile-story h5 {
         white-space: nowrap;
         overflow: hidden;
         max-width: 78px;
@@ -210,19 +233,20 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 14px;
-        
+
     }
 
-    .profile-story{
+    .profile-story {
         max-width: 78px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        
-    
+
+
     }
-    .story-image{
+
+    .story-image {
         width: 66px;
         height: 66px;
         display: flex;
@@ -231,18 +255,19 @@
         background-image: url(/images/stories_background.png);
         background-position: center center;
         margin-left: 18px;
-        
-    
+
+
     }
-    .story-image img{
-        height: 56px; 
+
+    .story-image img {
+        height: 56px;
     }
-    
- 
-    
+
+
+
 
     /* basically the union from all the big posts that are on the page */
-    .posts{
+    .posts {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -257,10 +282,12 @@
         border: 1px solid #DBDBDB;
         border-radius: 3px;
     }
-    .box-img > img{
-        width: 100%; 
+
+    .box-img>img {
+        width: 100%;
     }
-    .user{
+
+    .user {
         width: 100%;
         display: flex;
         align-items: center;
@@ -270,73 +297,81 @@
         box-sizing: border-box;
         border-radius: 3px 3px 0px 0px;
     }
-    .user div{
+
+    .user div {
         display: flex;
         align-items: center
     }
-    .user img{
+
+    .user img {
         border-radius: 28px;
         width: 32px;
         height: 32px;
         margin-left: 17px;
     }
-    .user h4{
+
+    .user h4 {
         margin-left: 15px;
         font-weight: 500;
         width: 109px;
         height: 21px;
         font-size: 14px;
         line-height: 16.41px;
-       
+
     }
-    .user ion-icon{
-      
+
+    .user ion-icon {
+
         zoom: 150%;
-       margin-right: 3%;
+        margin-right: 3%;
     }
 
 
     /* under part where all the likes are */
-    .likes{
+    .likes {
         display: flex;
         justify-content: space-between;
         align-items: space-around;
         padding: 13px 16px;
         box-sizing: border-box;
-       
+
     }
-    .likes ion-icon{
+
+    .likes ion-icon {
         font-size: 25px;
     }
-    .icons-left ion-icon{
+
+    .icons-left ion-icon {
         margin-right: 17px;
     }
-    .likedby{
+
+    .likedby {
         display: flex;
         align-items: center;
         font-size: 14px;
         padding-bottom: 14px;
         padding-left: 17px;
-    
+
     }
-    .likedby img{
-        border-radius: 10px;
+
+    .likedby img {
+        border-radius: 50%;
         width: 20px;
         height: 20px;
         margin-right: 5px;
     }
 
-/*where the comments start*/
-    .fixed{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
+    /*where the comments start*/
+    .fixed {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
 
-    padding: 0px 16px 15px 17px;
-  
+        padding: 0px 16px 15px 17px;
+
     }
 
-    .make-comment{
+    .make-comment {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -344,43 +379,44 @@
         padding: 0px 16px 15px 17px;
     }
 
-    .make-comment img{
+    .make-comment img {
         width: 20px;
         padding-right: 5px;
     }
 
-    input{
+    input {
         border: 1px solid lightgray;
         width: 78%;
         position: relative;
     }
 
-    button{
+    button {
         background-color: #FFFFFF;
         color: #B2DFFC;
         border: none;
 
         transition-duration: 300ms;
     }
-    button:hover{
-        color: #0095F6;
-    }       
 
-/*pointer hover*/
-    ion-icon{
-    cursor: pointer;
-  
+    button:hover {
+        color: #0095F6;
     }
-    .pointer{
+
+    /*pointer hover*/
+    ion-icon {
+        cursor: pointer;
+
+    }
+
+    .pointer {
         cursor: pointer;
     }
-    /* no display on desktop*/
-    .menu-mobile{
-        display: none;
-      }
 
-    .navigation{
-     display: none;
+    /* no display on desktop*/
+    .menu-mobile {
+        display: none;
     }
 
-}
+    .navigation {
+        display: none;
+    }
