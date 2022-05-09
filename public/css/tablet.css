@@ -1,0 +1,40 @@
+@media screen and (max-width: 935px) {
+    .menu-content {
+        height: 54px;
+        justify-content: space-around;
+    }
+
+    .container {
+        position: inherit;
+        width: auto;
+    }
+
+    .all-posts {
+
+        left: unset;
+        align-items: center;
+    }
+
+    ion-icon {
+        cursor: pointer;
+
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    /* no display on desktop*/
+    .menu-mobile {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+}

@@ -1,11 +1,22 @@
 import Videos from "./Videos"
+import React from "react"
+
+
 function Icons(props) {
     return (<ion-icon name={props.icon}></ion-icon>)
 }
 
 function Post(props) {
     const mainProfile = "/images/catanacomics.png"
-    const icons = ["heart-outline", "chatbubble-outline", "paper-plane-outline"]
+    const icons = ["chatbubble-outline", "paper-plane-outline"]
+    const [like, setLike] = React.useState(<ion-icon onClick={likeHandle} name="heart-outline"></ion-icon>)
+    function likeHandle(){
+        setLike(<ion-icon onClick={dislikeHandle} class="colored md hydrated" name="heart"></ion-icon>)
+    }
+    function dislikeHandle(){
+        setLike(<ion-icon onClick={likeHandle} class="md hydrated" name="heart-outline"></ion-icon>)
+    }
+
     return (
 
         <div class="box-img">
@@ -16,10 +27,11 @@ function Post(props) {
                 </div>
                 <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
             </div>
-            <img src={props.img} />
+            <img onClick={likeHandle} src={props.img} />
             <div class="likes">
                 <div class="icons-left">
                     <div class="icons-right">
+                        {like}
                         {icons.map(icon => <Icons icon={icon} />)}
                     </div>
                 </div>

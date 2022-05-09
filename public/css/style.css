@@ -330,6 +330,9 @@
         margin-right: 3%;
     }
 
+    ion-icon.colored {
+        color: red;
+    }
 
     /* under part where all the likes are */
     .likes {
